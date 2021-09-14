@@ -1,0 +1,20 @@
+.btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+
+    &--normal {
+        padding: 1.2rem 5.4rem 1.5rem;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2.1rem;
+    }
+
+    &--accent {
+        background: $color-accent;
+
+        &:hover {
+            background: darken($color-accent, 10%);
+        }
+    }
+}

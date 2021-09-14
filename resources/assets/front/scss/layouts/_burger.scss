@@ -1,0 +1,13 @@
+.burger {
+    max-width: 36px;
+    width: 100%;
+    max-height: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.burger__line {
+    max-height: 4px;
+    height: 100%;
+    background: $color-black;
+}
