@@ -1,4 +1,113 @@
 .header {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    height: 90px;
+    border-bottom: 1px solid $color-dark;
+    &.active {
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            background: rgba($color-white, .8);
+            z-index: -1;
+        }
+    }
+}
+
+.header__logo {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+}
+
+.header__face {
+    height: 90px;
+    background: $color-white;
     display: flex;
+    align-items: center;
+}
+
+.header__half {
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 1;
+    align-items: center;
+    &--left {
+        justify-content: center;
+        padding-right: 20px;
+    }
+    &--right {
+        justify-content: flex-end;
+        padding-left: 20px;
+    }
+}
+
+.header__half-item {
+    margin-right: 5rem;
+}
+
+.header__phone {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    letter-spacing: 0.04em;
+    color: $color-dark;
+    white-space: nowrap;
+    &:hover {
+        color: $color-main;
+        transition: $duration-normal $easing-in;
+    }
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+}
+
+.header__search-input {
+    max-width: 140px;
+    width: 100%;
+    border: none;
+}
+
+.header__back {
+    height: 180px;
+    background: $color-dark;
+    position: absolute;
+    transition: $duration-normal $easing-back-in;
+    width: 100%;
+    top: -200%;
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
+    &.active {
+        top: 0;
+    }
+}
+
+.header__menu {
+    display: flex;
+    padding: 3rem 0;
+}
+
+.header__menu-item {
+    &:not(:last-child) {
+        margin-right: 6.6rem;
+    }
+}
+
+.header__menu-item__link {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.01em;
+    &:hover {
+        color: $color-main;
+    }
 }

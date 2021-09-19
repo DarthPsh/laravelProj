@@ -17,6 +17,26 @@ Route::get('/', function () {
     return view('front/sections/home/index');
 });
 
+Route::get('/services', function () {
+    return view('front/sections/services/index');
+});
+
+Route::get('/projects', function () {
+    return view('front/sections/projects/index');
+});
+
+Route::get('/project', function () {
+    return view('front/sections/projects/project');
+});
+
+Route::get('/news', function () {
+    return view('front/sections/news/index');
+});
+
+Route::get('/about', function () {
+    return view('front/sections/about/index');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });

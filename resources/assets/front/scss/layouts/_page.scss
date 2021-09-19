@@ -1,0 +1,10 @@
+.page__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.page__inner {
+    flex-grow: 1;
+    position: relative;
+}

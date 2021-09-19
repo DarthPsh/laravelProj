@@ -21,7 +21,7 @@ html {
 }*/
 
 body {
-    //font-family: $font-family-primary;
+    font-family: $font-family-roboto;
     font-size: 1.6rem;
     //font-weight: $font-weight;
     //line-height: $line-height;
@@ -32,7 +32,7 @@ body {
     margin: 0;
     text-align: left;
     word-break: break-word;
-    //color: $text-color;
+    color: $color-dark;
     //background-color: $body-bg;
 
     -webkit-font-smoothing: antialiased;
@@ -46,6 +46,7 @@ img {
 
 a {
     text-decoration: none;
+    transition: $duration-normal $easing-in;
 }
 
 h1,

@@ -1,0 +1,15 @@
+.hero {
+    height: calc(100vh - 90px);
+    min-height: 768px;
+}
+
+.hero__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

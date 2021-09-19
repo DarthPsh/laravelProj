@@ -1,0 +1,32 @@
+.lang {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    z-index: 100;
+}
+
+.lang__item {
+    &:first-child {
+        margin-bottom: 2rem;
+    }
+}
+
+.lang__item-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 29px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.02em;
+    color: $color-dark;
+    border-radius: 4px;
+
+    &.active {
+        color: $color-white;
+        background: $color-main;
+    }
+}

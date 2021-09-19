@@ -1,0 +1,77 @@
+.waterfall {
+    column-count: 2;
+    padding-top: 18rem;
+}
+
+.waterfall__block {
+    break-inside: avoid;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    //fixes overflow problem
+    transform: translateX(0);
+    display: inline-block;
+    padding: 8rem 9rem;
+    width: 100%;
+    margin-bottom: 17rem;
+    box-sizing: border-box;
+
+    &--small {
+        max-width: 766px;
+    }
+
+    &--no {
+        &-padding {
+            padding: 0;
+        }
+    }
+
+    &--grad {
+        &-normal {
+            background: $grad-normal;
+        }
+        &-rotate {
+            background: $grad-rotate;
+        }
+    }
+
+    &--title {
+        margin-bottom: 9rem;
+    }
+    &--design {
+        height: 66rem;
+    }
+    &--test {
+        height: 95.5rem;
+    }
+    &--analiz {
+        height: 61rem;
+    }
+    &--dev {
+        height: 65.2rem;
+    }
+    &--content {
+        height: 62rem;
+    }
+}
+
+.waterfall__block-title {
+    margin-bottom: 2.1rem;
+}
+
+.waterfall__block-desc {
+    font-weight: 500;
+    font-size: 2.7rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.01em;
+}
+
+.waterfall__block-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}

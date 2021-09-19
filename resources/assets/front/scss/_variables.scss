@@ -2,6 +2,7 @@
 $body-bg: #f8fafc;
 
 // Typography
+$font-family-roboto: 'Roboto', sans-serif;
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 1.6rem;
 $font-size-normal: 10px;
@@ -11,9 +12,17 @@ $line-height-base: 1.6;
 // Colors
 $color-black: #000;
 $color-white: #fff;
-$color-gray: #eee;
+$color-gray: #C4C4C4;
+$color-dark: #2B2B2B;
 $color-main: #2ebddc;
 $color-accent: #fffa65;
 
-$bg-light-dark: linear-gradient(151.85deg, rgba(255, 250, 101, 0.8) -2.45%, rgba(46, 189, 220, 0.8) 107.93%);
-$bg-dark-light: linear-gradient(151.85deg, rgba(46, 189, 220, 0.8) -2.45%, rgba(255, 250, 101, 0.8) 107.93%);
+$grad-normal: linear-gradient(151.85deg, rgba(255, 250, 101, 0.8) -2.45%, rgba(46, 189, 220, 0.8) 107.93%);
+$grad-rotate: linear-gradient(151.85deg, rgba(46, 189, 220, 0.8) -2.45%, rgba(255, 250, 101, 0.8) 107.93%);
+
+// EASING TRANSITIONS
+$duration-normal: 0.4s;
+$easing-back-out: cubic-bezier(0.25, 0.74, 0.22, 1.1); // http://cubic-bezier.com/#.25,.74,.22,1.1
+$easing-back-in: cubic-bezier(0.47, -0.1, 0.5, -0.06); // http://cubic-bezier.com/#.47,-0.1,.5,-.06
+$easing-out: ease-out;
+$easing-in: ease-in;

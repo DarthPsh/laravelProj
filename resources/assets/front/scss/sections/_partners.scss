@@ -1,0 +1,17 @@
+.partners {
+    max-width: 1300px;
+    padding: 18rem 0;
+}
+
+.partners__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.partners__list-item {
+    &:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
